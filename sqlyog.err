@@ -1,0 +1,14 @@
+Query:
+semestersemestersemestervikas
+
+
+Error occured at:2020-06-13 13:53:08
+Line no.:2
+Error Code: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'semestersemestersemestervikas' at line 1
+Query:
+semestersemestersemestervikas
+
+
+Error occured at:2020-06-13 13:53:53
+Line no.:2
+Error Code: 1064 - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'semestersemestersemestervikas' at line 1

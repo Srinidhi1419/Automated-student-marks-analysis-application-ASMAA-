@@ -1,0 +1,39 @@
+nav{
+background-color:rgba(0,0,255,0.6);
+}
+ul li{
+border-left:1px solid white;
+}
+ul li.last{
+	border-right:1px solid white;
+}
+
+@media (max-width:576px){
+	ul li{
+		border:none;
+		border-bottom:1px solid white;
+		padding:7px;
+		}	
+	ul li.last{
+		border-right:none;
+	}	 
+	iframe{
+		width:453px;
+	}
+		
+}
+@media (max-width:776px){
+	ul li{
+		border:none;
+		border-bottom:1px solid white;
+		padding:7px;
+		}
+	ul li.last{
+		border-right:none;
+	}		
+}
+h2.register{
+	background-color:#E9ECEF;
+	border-radius:5px;
+	padding:15px;
+}

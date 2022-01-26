@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>VIKAS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link href="css/style.css" rel="stylesheet" />
+<link href="bootstrap/bootstrap.css" rel="stylesheet"/>
+<link href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<script src="jquery/jquery-3.4.1.min.js"></script>
+<script src="bootstrap/bootstrap.js"></script>
+<script src="jquery/jquery.validate.min.js"></script>
+<style>
+</style>
+</head>
+<body>
+<!--Top-->
+<div class="container-fluid">
+<div class="row">
+<div class="col-12">
+<img src="images/slide.png" width="100%"/>
+</div>
+</div>
+</div>
+<!--Menu -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top padding">
+<div class="container-fluid">
+    <a class="navbar-brand"></a>
+	<button class="navbar-toggler text-white" type="button" data-target="#navmenu" data-toggle="collapse"><span class="navbar-toggler-icon"></span></button>
+	<div class="collapse navbar-collapse justify-content-center" id="navmenu">
+		<ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link py-0 active text-white" href="" data-target="#alogin" data-toggle="modal">Administrative</a></li>
+			<li class="nav-item"><a class="nav-link py-0 text-white" href="" data-target="#elogin" data-toggle="modal">Examination Cell</a></li>
+			<li class="nav-item"><a class="nav-link py-0 text-white" href="" data-target="#plogin" data-toggle="modal">Principal</a></li>
+			<li class="nav-item"><a class="nav-link py-0 text-white" href="" data-target="#hlogin" data-toggle="modal">HOD</a></li>
+			<li class="nav-item"><a class="nav-link py-0 text-white" href="" data-target="#flogin" data-toggle="modal">Faculty</a></li>
+			<li class="nav-item last"><a class="nav-link py-0 text-white" href="" data-target="#slogin" data-toggle="modal">Student</a></li>
+		</ul>
+	</div>	
+</div>
+</nav>
+<!--Admin Login -->
+<div class="modal fade" id="alogin" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content" class="text-capitalize">
+			 <div class="modal-header">
+				<h2>Administrative Login</h2>
+				<button class="btn" data-dismiss="modal">&times;</button>
+			</div>
+		 		
+                    <div class="modal-body">
+            <form action="LoginCheck.jsp" method="post">
+                <div class="form-group">                    
+                    <input type="text" name='name' class="form-control" placeholder="Enter Username" required="" id="email">
+                </div>
+                <div class="form-group">                    
+                    <input type="password" name='password' class="form-control" placeholder="Enter Password" required="" id="pwd">
+                </div>
+              <input type='hidden' name="status" value="1"/>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+                    
+		<div class="modal-footer">
+			<button  class="btn btn-danger" data-dismiss="modal">close</button>
+		</div>
+	   	</div>
+	</div>
+</div>
+<!-- Principal Login-->
+<div class="modal fade" id="plogin" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content" class="text-capitalize">
+			 <div class="modal-header">
+				<h2>Principal Login</h2>
+				<button class="btn" data-dismiss="modal">&times;</button>
+			</div>
+		 		
+                    <div class="modal-body">
+            <form action="LoginCheck.jsp" method="post">
+                <div class="form-group">                    
+                    <input type="text" name='name' class="form-control" placeholder="Enter Username" required="" id="email">
+                </div>
+                <div class="form-group">                    
+                    <input type="password" name='password' class="form-control" placeholder="Enter Password" required="" id="pwd">
+                </div>
+              <input type='hidden' name="status" value="2"/>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+                    
+		<div class="modal-footer">
+			<button  class="btn btn-danger" data-dismiss="modal">close</button>
+		</div>
+	   	</div>
+	</div>
+</div>
+<!-- Examination Section Login-->
+<div class="modal fade" id="elogin" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content" class="text-capitalize">
+			 <div class="modal-header">
+				<h2>Examination Cell Login</h2>
+				<button class="btn" data-dismiss="modal">&times;</button>
+			</div>
+	<div class="modal-body">
+            <form action="LoginCheck.jsp" method="post">
+                <div class="form-group">                    
+                    <input type="text" name='name' class="form-control" placeholder="Enter Username" required="" id="email">
+                </div>
+                <div class="form-group">                    
+                    <input type="password" name='password' class="form-control" placeholder="Enter Password" required="" id="pwd">
+                </div>
+              <input type='hidden' name="status" value="4"/>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+		<div class="modal-footer">
+			<button  class="btn btn-danger" data-dismiss="modal">close</button>
+		</div>
+	   	</div>
+	</div>
+</div>
+<!-- HOD Login-->
+<div class="modal fade" id="hlogin" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content" class="text-capitalize">
+			 <div class="modal-header">
+				<h2>HOD Login</h2>
+				<button class="btn" data-dismiss="modal">&times;</button>
+			 </div>
+		 		<div class="modal-body">
+            <form action="LoginCheck.jsp" method="post">
+                <div class="form-group">                    
+                    <input type="text" name='name' class="form-control" placeholder="Enter Username" required="" id="email">
+                </div>
+                <div class="form-group">                    
+                    <input type="password" name='password' class="form-control" placeholder="Enter Password" required="" id="pwd">
+                </div>
+              <input type='hidden' name="status" value="3"/>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+		<div class="modal-footer">
+			<button  class="btn btn-danger" data-dismiss="modal">close</button>
+		</div>
+	   	</div>
+	</div>
+</div>
+<!-- Faculty Login-->
+<div class="modal fade" id="flogin" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content" class="text-capitalize">
+			<div class="modal-header">
+				<h2>Faculty Login</h2>
+				<button class="btn" data-dismiss="modal">&times;</button>
+			</div>
+		 <div class="modal-body">
+                     <form action="LoginCheck.jsp" method="post">
+                <div class="form-group">                    
+                    <input type="text" name='name' class="form-control" placeholder="Enter Username" required="" id="email">
+                </div>
+                <div class="form-group">                    
+                    <input type="password" name='password' class="form-control" placeholder="Enter Password" required="" id="pwd">
+                </div>
+              <input type='hidden' name="status" value="6"/>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>		
+                    
+		<div class="modal-footer">
+			<button  class="btn btn-danger" data-dismiss="modal">close</button>
+		</div>
+	   	</div>
+	</div>
+</div>
+<!-- Student Login-->
+<div class="modal fade" id="slogin" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content" class="text-capitalize">
+			 <div class="modal-header">
+				<h2>Student Login</h2>
+				<button class="btn" data-dismiss="modal">&times;</button>
+			</div>
+		 		<div class="modal-body">
+                                    <form action="LoginCheck.jsp" method="post">
+                <div class="form-group">                    
+                    <input type="text" name='name' class="form-control" placeholder="Enter Roll Number" required="" id="email">
+                </div>
+                <div class="form-group">                    
+                    <input type="password" name='password' class="form-control" placeholder="Enter Password" required="" id="pwd">
+                </div>
+              <input type='hidden' name="status" value="5"/>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+		<div class="modal-footer">
+			<button  class="btn btn-danger" data-dismiss="modal">close</button>
+		</div>
+	   	</div>
+	</div>
+</div>
+
+<br/>
+<!--2div section-->
+<div class="container-fluid padding">
+<div class="row">
+<!--Image-->
+<div class="col-xs-12 col-sm-12 col-md-6">
+<img src="images/slide.jpg" class="img-thumbnail" width="100%"/>
+</div>
+<!--Data-->
+<div class="col-xs-12 col-sm-12 col-md-6">
+<h2 class="text-center">Our College</h2>
+<p style="line-height:30px;text-align:justify">Vikas Group of Institutions was established in 2008 with a single – aim to provide a perfect platform to students in the field of Engineering, Technology and Management for their academic and overall personality development. The College has a rich tradition of soaring high with academic excellence & overall personal growth of students. This is achieved by providing excellent academic environment and excellent infrastructure with the help of dedicated & highly qualified faculty members with M.Tech. and Ph.D. qualification and decades of experience. State of art infrastructure, includes labs with high quality equipment, rich collection of Library Books & IEEE, International, Indian journals and amenities. The college has well â€“ equipped City Center for Faculty Development, Student Training and Placements Training Activities.</p>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+<div class="col-12">
+<p style="line-height:30px;text-align:justify">Academically challenging spirit, explorative attitude, discipline and success are the few benchmarks of successful career. The pragmatic learning environment at VIKAS offers every young aspirant such successful academic learning. Located amidst the heart of nature the institution is bolstered by vibrant arcade of opportunities to flourish â€“ and be a part of enthusiastic community of competent students around Andhra Pradesh. VIKAS is the right place to define student future with a will to question ideas, pursue long-held passions and explore new interests to redefine what is possible.</p>
+</div>
+</div>
+</div>
+<!--Address section-->
+<div class="container-fluid">
+<div class="row">
+<!--Geolocation-->
+<div class="col-xs-12 col-sm-12 col-md-6">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.9788197565153!2d80.67185071423107!3d16.627832128643345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35e661a945579f%3A0xcdd2f7f5e50d30ec!2sVikas%20College%20Of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1578101187555!5m2!1sen!2sin" width="654" height="450" frameborder="0" style="border:1px ridge black;" allowfullscreen=""></iframe>
+</div>
+<!-- Contact Address-->
+<div class="col-xs-12 col-sm-12 col-md-6">
+<i class="fa fa-address-card-o" aria-hidden="true"></i><h3>Address</h3>
+</div>
+
+</div>
+</div
+<br/>
+<!--Footer-->
+<div class="container-fluid padding bg-dark footer">
+<div class="row welcome text-center">
+<div class="col-xs-12 col-sm-12 col-md-6">
+	<h4>Address</h4>
+	<p></p>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-6">
+	<h4>Follow Us</h4>
+	<p></p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
